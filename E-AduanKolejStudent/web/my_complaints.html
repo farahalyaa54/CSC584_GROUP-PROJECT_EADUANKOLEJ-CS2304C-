@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Complaints</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <span><strong>E-Aduan Kolej</strong></span>
+        <div>
+            <a href="student_dashboard.html">Dashboard</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>My Submitted Complaints</h2>
+        <table>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Category</th>
+                <th>Location</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>TKT-1001</td>
+                <td>Electrical</td>
+                <td>Block A, A-204</td>
+                <td><span class="badge high">High</span></td>
+                <td><span class="badge pending">Pending</span></td>
+                <td>
+                    <a href="update_complaint.html" class="btn" style="margin:0; padding:5px 10px;">Edit</a>
+                    <a href="delete_complaint.html" class="btn btn-danger" style="margin:0; padding:5px 10px;">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>TKT-1002</td>
+                <td>Furniture</td>
+                <td>Block A, A-204</td>
+                <td>Low</td>
+                <td><span class="badge progress">In Progress</span></td>
+                <td><em>Assigned (Locked)</em></td>
+            </tr>
+        </table>
+
+        <a href="submit_aduan.html" class="btn">+ Submit Another Complaint</a>
+        <a href="student_dashboard.html" class="btn btn-secondary">Back to Dashboard</a>
+    </div>
+</body>
+</html>
