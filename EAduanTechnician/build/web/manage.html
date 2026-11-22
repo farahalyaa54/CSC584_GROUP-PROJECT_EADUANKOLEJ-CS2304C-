@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manage Reports – E-Aduan Technician</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  
+  <aside>
+    <h2>🔧 E-Aduan</h2>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="reports.html">📋 All Reports</a>
+      <a href="manage.html" class="on">🛠 Manage Reports</a>
+      <a href="assigned.html">✅ My Assigned</a>
+    </nav>
+    <div class="who">
+      <span>👤 Ali</span>
+      <a class="btn sm out" href="technician.html">Logout</a>
+    </div>
+  </aside>
+
+  
+  <main>
+    <h1>Manage Reports</h1>
+
+   
+    <div class="card">
+      <h3>Incoming complaints (unassigned)</h3>
+      <div class="tw">
+        <table>
+          <tr>
+            <th>Ticket</th><th>Category</th><th>Location</th><th>Priority</th>
+            <th>Status</th><th>Date</th><th>Assign to</th>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1003</a></td>
+            <td>Furniture</td><td>Block B / B-110</td>
+            <td><span class="badge Low">Low</span></td>
+            <td><span class="badge Pending">Pending</span></td>
+            <td>20/11/2026</td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option>Select technician</option>
+                  <option>Ali</option>
+                  <option>Siti</option>
+                  <option>Raju</option>
+                </select>
+                <button class="btn sm">Assign</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1004</a></td>
+            <td>Electrical</td><td>Block C / C-012</td>
+            <td><span class="badge High">High</span></td>
+            <td><span class="badge Pending">Pending</span></td>
+            <td>21/11/2026</td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option>Select technician</option>
+                  <option>Ali</option>
+                  <option>Siti</option>
+                  <option>Raju</option>
+                </select>
+                <button class="btn sm">Assign</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1005</a></td>
+            <td>Electrical</td><td>Block C / C-012</td>
+            <td><span class="badge High">High</span></td>
+            <td><span class="badge Pending">Pending</span></td>
+            <td>21/11/2026</td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option>Select technician</option>
+                  <option>Ali</option>
+                  <option>Siti</option>
+                  <option>Raju</option>
+                </select>
+                <button class="btn sm">Assign</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <h3>Possible duplicate reports</h3>
+      <p class="muted">Reports for the same room and category are grouped here. Keep the original and delete the repeats.</p>
+
+      <div class="dup">
+        <b>Block C / C-012 – Electrical</b>
+
+        <div class="row" style="margin-top:.5rem">
+          <a class="lk" href="detail.html">TKT-1004</a>
+          <span>Socket sparks</span>
+          <span class="muted">(keep original)</span>
+        </div>
+
+        <div class="row" style="margin-top:.5rem">
+          <a class="lk" href="detail.html">TKT-1005</a>
+          <span>Socket sparking!</span>
+          <button class="btn sm red">Delete duplicate</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

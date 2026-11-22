@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Reports – E-Aduan Technician</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  
+  <aside>
+    <h2>🔧 E-Aduan</h2>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="reports.html" class="on">📋 All Reports</a>
+      <a href="manage.html">🛠 Manage Reports</a>
+      <a href="assigned.html">✅ My Assigned</a>
+    </nav>
+    <div class="who">
+      <span>👤 Ali</span>
+      <a class="btn sm out" href="technician.html">Logout</a>
+    </div>
+  </aside>
+
+  
+  <main>
+    <h1>All Reports</h1>
+
+    <div class="card">
+
+      
+      <div class="row" style="margin-bottom:1rem">
+        <input type="text" placeholder="Search ticket, room or problem..." style="max-width:260px">
+        <select>
+          <option>All Status</option>
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+        </select>
+        <select>
+          <option>All Priority</option>
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+        </select>
+        <select>
+          <option>All Blocks</option>
+          <option>Block A</option>
+          <option>Block B</option>
+          <option>Block C</option>
+        </select>
+      </div>
+
+      
+      <div class="tw">
+        <table>
+          <tr>
+            <th>Ticket</th><th>Category</th><th>Location</th><th>Priority</th>
+            <th>Status</th><th>Technician</th><th>Date</th>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1001</a></td>
+            <td>Electrical</td><td>Block A / A-101</td>
+            <td><span class="badge High">High</span></td>
+            <td><span class="badge In-Progress">In Progress</span></td>
+            <td>Ali</td><td>19/11/2026</td>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1002</a></td>
+            <td>Plumbing</td><td>Block A / A-204</td>
+            <td><span class="badge Medium">Medium</span></td>
+            <td><span class="badge Resolved">Resolved</span></td>
+            <td>Siti</td><td>16/11/2026</td>
+          </tr>
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1003</a></td>
+            <td>Furniture</td><td>Block B / B-110</td>
+            <td><span class="badge Low">Low</span></td>
+            <td><span class="badge Pending">Pending</span></td>
+            <td>—</td><td>20/11/2026</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report Details – E-Aduan Technician</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  
+  <aside>
+    <h2>🔧 E-Aduan</h2>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="reports.html" class="on">📋 All Reports</a>
+      <a href="manage.html">🛠 Manage Reports</a>
+      <a href="assigned.html">✅ My Assigned</a>
+    </nav>
+    <div class="who">
+      <span>👤 Ali</span>
+      <a class="btn sm out" href="technician.html">Logout</a>
+    </div>
+  </aside>
+
+  
+  <main>
+    <h1>TKT-1001</h1>
+
+    
+    <div class="card">
+      <h3>Complaint details</h3>
+      <dl>
+        <dt>Category</dt><dd>Electrical</dd>
+        <dt>Location</dt><dd>Block A / A-101</dd>
+        <dt>Description</dt><dd>Light not working</dd>
+        <dt>Photo evidence</dt><dd class="muted">No photo uploaded</dd>
+        <dt>Reported by</dt><dd>Student 1</dd>
+        <dt>Priority</dt><dd><span class="badge High">High</span></dd>
+        <dt>Status</dt><dd><span class="badge In-Progress">In Progress</span></dd>
+        <dt>Assigned to</dt><dd>Ali</dd>
+        <dt>Submitted</dt><dd>19/11/2026</dd>
+      </dl>
+    </div>
+
+    
+    <div class="card">
+      <h3>Update report</h3>
+      <div class="row">
+        <select>
+          <option>Pending</option>
+          <option selected>In Progress</option>
+          <option>Resolved</option>
+        </select>
+        <button class="btn sm">Update Status</button>
+
+        <select>
+          <option>Unassigned</option>
+          <option selected>Ali</option>
+          <option>Siti</option>
+          <option>Raju</option>
+        </select>
+        <button class="btn sm">Assign</button>
+      </div>
+    </div>
+
+    <a class="lk" href="reports.html">← Back to reports</a>
+  </main>
+
+</div>
+
+</body>
+</html>

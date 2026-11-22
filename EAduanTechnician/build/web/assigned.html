@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Assigned – E-Aduan Technician</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <aside>
+    <h2>🔧 E-Aduan</h2>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="reports.html">📋 All Reports</a>
+      <a href="manage.html">🛠 Manage Reports</a>
+      <a href="assigned.html" class="on">✅ My Assigned</a>
+    </nav>
+    <div class="who">
+      <span>👤 Ali</span>
+      <a class="btn sm out" href="technician.html">Logout</a>
+    </div>
+  </aside>
+
+ 
+  <main>
+    <h1>My Assigned Reports</h1>
+
+    <!-- Ringkasan kecil -->
+    <div class="grid">
+      <div class="stat p"><b>1</b>Pending</div>
+      <div class="stat i"><b>1</b>In Progress</div>
+      <div class="stat r"><b>1</b>Resolved</div>
+    </div>
+    <br>
+
+    
+    <div class="card">
+      <h3>Assigned to Ali</h3>
+      <div class="tw">
+        <table>
+          <tr>
+            <th>Ticket</th><th>Category</th><th>Location</th><th>Priority</th>
+            <th>Current status</th><th>Update status</th>
+          </tr>
+
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1001</a></td>
+            <td>Electrical</td><td>Block A / A-101</td>
+            <td><span class="badge High">High</span></td>
+            <td><span class="badge In-Progress">In Progress</span></td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option>Pending</option>
+                  <option selected>In Progress</option>
+                  <option>Resolved</option>
+                </select>
+                <button class="btn sm">Update</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1006</a></td>
+            <td>Plumbing</td><td>Block B / B-222</td>
+            <td><span class="badge High">High</span></td>
+            <td><span class="badge Pending">Pending</span></td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option selected>Pending</option>
+                  <option>In Progress</option>
+                  <option>Resolved</option>
+                </select>
+                <button class="btn sm">Update</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><a class="lk" href="detail.html">TKT-1007</a></td>
+            <td>Cleaning</td><td>Block C / C-120</td>
+            <td><span class="badge Low">Low</span></td>
+            <td><span class="badge Resolved">Resolved</span></td>
+            <td>
+              <div class="row">
+                <select style="width:auto">
+                  <option>Pending</option>
+                  <option>In Progress</option>
+                  <option selected>Resolved</option>
+                </select>
+                <button class="btn sm">Update</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>
